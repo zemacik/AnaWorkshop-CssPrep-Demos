@@ -1,0 +1,144 @@
+﻿/*--------------------------------------------------*/
+/* Použitie - Premenné */
+/*--------------------------------------------------*/
+test = red
+body
+  background-color: test
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Import */
+/*--------------------------------------------------*/
+@import 'mixins.styl'
+
+
+
+/*--------------------------------------------------*/
+/* Použitie  - Mixin */
+/*--------------------------------------------------*/
+.box
+  border-radius(10px)
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Vnáranie, a rodič */
+/*--------------------------------------------------*/
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+  li
+    display: inline-block
+  & > a
+    display: block
+    padding: 6px 12px
+    text-decoration: none
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Vnáranie, media queries */
+/*--------------------------------------------------*/
+.box-nav-default
+  height: 100px
+.box-nav2
+  @extend .box-nav-default
+  @media only screen and (max-width: 768px)
+    width: 25%
+  @media only screen and (min-width: 769px)
+    width: 50%
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Partials */
+/*--------------------------------------------------*/
+.box-nav3
+  @import '_partial.styl'
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Extend / Dedenie */
+/*--------------------------------------------------*/
+.message
+  border: 1px solid #ccc
+  padding: 10px
+  color: #333
+.success
+  @extend .message
+  border-color: green
+.error
+  @extend .message
+  border-color: red
+.warning
+  @extend .message
+  border-color: yellow
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Matematické funkcie */
+/*--------------------------------------------------*/
+container-width = 960px
+article[role="main"]
+  float: left
+  width: (600px / container-width * 100px)
+  // ukazat % !
+aside[role="complementary"]
+  float: right
+  width: (300px / container-width * 100px)
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Funkce na prácu s farbami */
+/*--------------------------------------------------*/
+cool-color = red
+
+// Stmavenie farby
+.div1
+  color: darken(cool-color, 10%)
+
+// Vytvorenie polopriehladnej farby:
+.div2
+  //color: fadeout(cool-color, 10%); // LESS
+  color: rgba(cool-color, 0.7)
+
+// Zmiesanie dvoch farieb:
+.div3
+  color: mix(cool-color, navy, 50%)
+
+
+// ...
+// a kopec dalsich funkcii
+//
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Cylky */
+/*--------------------------------------------------*/
+colors = red, green, blue
+for color, i in colors
+  #cp{i}
+    background-color: color
+
+
+
+/*--------------------------------------------------*/
+/* Použitie - Podmienky */
+/*--------------------------------------------------*/
+typ-uloziska = disketa
+p
+  if typ-uloziska == disketa
+    color: blue
+  else if typ-uloziska == pevnydisk
+    color: green
+  else
+    color: black
+
+

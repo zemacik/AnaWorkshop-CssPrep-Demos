@@ -1,0 +1,26 @@
+﻿[
+  {
+    "outputFile": "Styles/scss/site.css",
+    "inputFile": "Styles/scss/site.scss"
+  },
+  {
+    "outputFile": "Styles/scss/variables.css",
+    "inputFile": "Styles/scss/variables.scss"
+  },
+  {
+    "outputFile": "Styles/sass/site.css",
+    "inputFile": "Styles/sass/site.scss"
+  },
+  {
+    "outputFile": "Styles/stylus/site.css",
+    "inputFile": "Styles/stylus/site.styl"
+  },
+  {
+    "outputFile": "Styles/less/site.css",
+    "inputFile": "Styles/less/site.less"
+  },
+  {
+    "outputFile": "Styles/less/site_empty.css",
+    "inputFile": "Styles/less/site_empty.less"
+  }
+]

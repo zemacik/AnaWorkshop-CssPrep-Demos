@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"name": "mypackage",
+	"private": true,
+	"devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-less": "3.1.0",
+    "gulp-watch": "4.3.8"
+	}
+}

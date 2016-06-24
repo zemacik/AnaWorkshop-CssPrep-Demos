@@ -1,0 +1,120 @@
+﻿/*--------------------------------------------------*/
+/* Použitie - Premenné */
+/*--------------------------------------------------*/
+body {
+  background-color: blue;
+}
+/*--------------------------------------------------*/
+/* Použitie - Import */
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/* Použitie  - Mixin */
+/*--------------------------------------------------*/
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+/*--------------------------------------------------*/
+/* Použitie - Vnáranie, a rodič */
+/*--------------------------------------------------*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav > a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+/*--------------------------------------------------*/
+/* Použitie - Vnáranie, media queries */
+/*--------------------------------------------------*/
+.box-nav-default,
+.box-nav2 {
+  height: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .box-nav2 {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .box-nav2 {
+    width: 50%;
+  }
+}
+/*--------------------------------------------------*/
+/* Použitie - Partials */
+/*--------------------------------------------------*/
+.box-nav3 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*--------------------------------------------------*/
+/* Použitie - Extend / Dedenie */
+/*--------------------------------------------------*/
+.message,
+.success,
+.error,
+.warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+.success {
+  border-color: green;
+}
+.error {
+  border-color: red;
+}
+.warning {
+  border-color: yellow;
+}
+/*--------------------------------------------------*/
+/* Použitie - Matematické funkcie */
+/*--------------------------------------------------*/
+article[role="main"] {
+  float: left;
+  width: 62.5px;
+}
+aside[role="complementary"] {
+  float: right;
+  width: 31.25px;
+}
+/*--------------------------------------------------*/
+/* Použitie - Funkce na prácu s farbami */
+/*--------------------------------------------------*/
+.div1 {
+  color: #cc0000;
+}
+.div2 {
+  color: rgba(255, 0, 0, 0.9);
+}
+.div3 {
+  color: #800040;
+}
+/*--------------------------------------------------*/
+/* Použitie - Cylky */
+/*--------------------------------------------------*/
+#cp1 {
+  background-color: red;
+}
+#cp2 {
+  background-color: green;
+}
+#cp3 {
+  background-color: blue;
+}
+/*--------------------------------------------------*/
+/* Použitie - Podmienky */
+/*--------------------------------------------------*/
+p {
+  color: blue;
+}

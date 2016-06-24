@@ -1,0 +1,22 @@
+
+/*--------------------------------------------------*/
+/* Použitie - Podmienky */
+/*--------------------------------------------------*/
+
+@typ-uloziska: pevnydisk;
+
+.farba-podla-uloziska (@typ-uloziska) when (@typ-uloziska = disketa){
+    color: blue;
+}
+
+.farba-podla-uloziska (@typ-uloziska) when (@typ-uloziska = pevnydisk){
+    color: green;
+}
+
+.farba-podla-uloziska (@typ-uloziska) when (default()){
+    color: black;
+}
+
+p {
+    .farba-podla-uloziska(@typ-uloziska);
+}
