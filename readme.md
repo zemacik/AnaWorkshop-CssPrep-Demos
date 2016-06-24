@@ -1,1 +1,1 @@
-Demos from my presentation at anaworkshop in 2016 about CSS Preprocessors
+Dema z prezentacie ktoru som mal na workshope v ANASOFTe o CSS Preprocesoroch
